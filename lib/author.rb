@@ -48,4 +48,9 @@ require 'pry'
       DB.exec("DELETE FROM authors WHERE id = #{@id};")
     end
 
+    def books
+      books = []
+      results = DB.exec("SELECT ")
+    end
+
   end

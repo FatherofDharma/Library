@@ -42,10 +42,15 @@ require 'pry'
     def update(title)
       @title = title
       DB.exec("UPDATE books SET title = '#{@title}' WHERE id = #{id};")
+
     end
 
     def delete
       DB.exec("DELETE FROM books WHERE id = #{@id};")
+    end
+
+    def authors
+      
     end
 
   end
